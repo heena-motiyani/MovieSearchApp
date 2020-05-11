@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header.component';
+import { DisplayMovieComponent } from './display-movie.component';
+import { SearchComponent } from './search.component';
+import { MoviePreviewComponent } from './search/movie-preview/movie-preview.component';
+import { FooterComponent } from './footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,HeaderComponent, DisplayMovieComponent, SearchComponent, MoviePreviewComponent, FooterComponent
   ],
   imports: [
     BrowserModule,
