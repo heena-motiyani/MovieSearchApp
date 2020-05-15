@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'false-movie-preview',
+  selector: 'movie-preview',
   templateUrl: './movie-preview.component.html',
   styles: []
 })

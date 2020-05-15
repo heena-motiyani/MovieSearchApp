@@ -4,7 +4,15 @@ import {Component} from '@angular/core';
 {
   selector: 'app-header',
   template:`
-  <span> Header </span>
+  <header>
+  <div class="row">
+  <div class="col s4 offset-s4 search-btn center-align">
+  <span class="material-icons">search</span>
+  
+  </div>
+  </div>
+  
+  </header>
   `
 })
 export class HeaderComponent
