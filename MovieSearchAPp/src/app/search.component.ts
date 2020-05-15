@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {data} from './mock-data';
+import {Movie} from './Movie';
 @Component({
   selector: 'search-movie',
   templateUrl: './search.component.html',
@@ -10,6 +11,6 @@ export class SearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  } 
 
 }
