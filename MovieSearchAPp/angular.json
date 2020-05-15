@@ -3,8 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    
-    "MovieApp": {
+    "MovieSearchAPp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,8 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "aot": true,
-            "outputPath": "dist/MovieApp",
+            "outputPath": "dist/MovieSearchAPp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,10 +49,6 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -63,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "MovieApp:build"
+            "browserTarget": "MovieSearchAPp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "MovieApp:build:production"
+              "browserTarget": "MovieSearchAPp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MovieApp:build"
+            "browserTarget": "MovieSearchAPp:build"
           }
         },
         "test": {
@@ -89,9 +83,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "MovieApp/node_modules/materialize-css/dist/css/materialize.css",
-              "src/animation.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -113,19 +105,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "MovieApp:serve"
+            "devServerTarget": "MovieSearchAPp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "MovieApp:serve:production"
+              "devServerTarget": "MovieSearchAPp:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "MovieApp",
-  "cli": {
-    "analytics": false
-  }
+    }},
+  "defaultProject": "MovieSearchAPp"
 }
