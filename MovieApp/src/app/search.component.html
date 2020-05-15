@@ -1,3 +1,12 @@
-<p>Search Component</p>
+<div class="col s12">  
+    <div class="row">
+ <input type="text" class="search-input" [ngModel]="search" placeholder="Search A Movie">
+    <movie-preview></movie-preview>
+    <movie-preview></movie-preview>
+    <movie-preview></movie-preview>
+    <movie-preview></movie-preview>
+    <h3 [ngStyle]= "{'text-align':center}"> No results found for {{search}}</h3>
 
-<false-movie-preview></false-movie-preview>
+</div>
+</div>
+

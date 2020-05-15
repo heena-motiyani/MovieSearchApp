@@ -83,7 +83,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css","MovieApp/node_modules/materialize-css/dist/css/materialize.css","src/animation.css"
             ],
             "scripts": []
           }
