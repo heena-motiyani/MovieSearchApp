@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {Output,EventEmitter} from '@angular/core';
+import { from } from 'rxjs';
 
 @Component(
 {
@@ -7,7 +9,7 @@ import {Component} from '@angular/core';
   <header>
   <div class="row">
   <div class=" center-align">
-  <span class="material-icons">search</span>
+  <span (click) = "startNewSearch.emit()" class="material-icons">search</span>
   
   </div>
   </div>
@@ -17,5 +19,5 @@ import {Component} from '@angular/core';
 })
 export class HeaderComponent
 {
-
+  @Output() startNewSearch = new EventEmitter()
 }
